@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Degrees</title>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Enter a value to show the table:</h2>
+  <input type="text" id="inputField">
+  <button onclick="showTable()">Show Table</button>
+  <br><br>
+  <div id="tableContainer" style="display: none;">
+    <table>
+      <tr>
+        <th>Student</th>
+        <th>Degree</th>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Bachelor's</td>
+      </tr>
+      <tr>
+        <td>Jane</td>
+        <td>Master's</td>
+      </tr>
+      <tr>
+        <td>David</td>
+        <td>PhD</td>
+      </tr>
+      <tr>
+        <td>Sarah</td>
+        <td>Bachelor's</td>
+      </tr>
+      <tr>
+        <td>Michael</td>
+        <td>Master's</td>
+      </tr>
+    </table>
+  </div>
+
+  <script>
+    function showTable() {
+      var inputValue = document.getElementById("inputField").value;
+      if (inputValue === "correct") {
+        document.getElementById("tableContainer").style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>
